@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #navbar {
+        background: linear-gradient(180deg, orange, white, green);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 100px;
+      }
+      .item1 {
+        /* margin-left: -600px; */
+        /* margin-right: 600px; */
+      }
+      #navbar #anchor {
+        padding: 20px;
+        display: flex;
+        justify-content: right;
+        /* border: 2px solid black; */
+        width: 1200px;
+        /* text-decoration: none; */
+      }
+      .item2 {
+        margin-right: 50px;
+        text-decoration: none;
+        color: purple;
+        font-size: 20px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .item3 {
+        margin-right: 50px;
+        text-decoration: none;
+        color: purple;
+        font-size: 20px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .item4 {
+        margin-right: 50px;
+        text-decoration: none;
+        color: purple;
+        font-size: 20px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .item5 {
+        margin-right: 50px;
+        text-decoration: none;
+        color: purple;
+        font-size: 20px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      a:hover {
+        color: blue;
+      }
+      .container1 {
+        /* background-image: url();
+        background-size: cover; */
+        display: flex;
+        background-color: lightsalmon;
+        /* border: 1px solid black; */
+        flex-direction: row;
+        /* height: 1000px; */
+        /* color: white; */
+      }
+      .container1 .img1 {
+        margin-right: 200px;
+        margin-left: 150px;
+      }
+      .container1 .intro {
+        font-size: xx-large;
+      }
+      .container1 .intro h1 {
+        margin-bottom: -35px;
+        padding-bottom: -30px;
+        line-height: -30px;
+        /* border: 1px solid black; */
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .container1 .icons {
+        /* border: 1px solid black; */
+        margin-top: 50px;
+        padding: 20px;
+      }
+      .container1 .icons img {
+        margin-right: 40px;
+        /* color: coral; */
+      }
+      .container1 .icons img:hover {
+        background-color: cornflowerblue;
+      }
+      .container1 button {
+        background-color: limegreen;
+        color: purple;
+        border-radius: 50%;
+      }
+      .container1 button h3:hover {
+        color: black;
+      }
+      .about {
+        margin-top: 200px;
+        text-align: center;
+        color: purple;
+        margin-bottom: 100px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .about:hover {
+        color: black;
+      }
+      .box {
+        background-color: lightseagreen;
+        display: flex;
+        /* margin: 100px auto; */
+      }
+      .box img {
+        margin-left: 200px;
+        margin-right: 100px;
+      }
+      .box .para {
+        /* border: 1px solid black; */
+        width: 600px;
+        display: flex;
+        justify-content: center;
+        font-size: larger;
+        color: whitesmoke;
+        line-height: 40px;
+        font-weight: 10px;
+      }
+      .skills {
+        margin-top: 50px;
+        text-align: center;
+        color: purple;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .skills:hover {
+        color: black;
+      }
+      .tech .pro .softwares {
+        /* border: 1px solid grey; */
+        display: flex;
+        border-bottom: 4px solid purple;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .tech {
+        background-color: lightcoral;
+        display: flex;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        color: whitesmoke;
+        /* line-height: 40px; */
+        font-weight: 10px;
+      }
+      .tech .pro {
+        margin-left: 100px;
+        margin-right: 100px;
+      }
+      .tech .rick {
+        margin-right: 100px;
+      }
+      .tech .pro .softwares .react {
+        margin-right: 20px;
+      }
+      .tech .pro .softwares .react:hover {
+        background-color: purple;
+      }
+      .work {
+        margin-top: 100px;
+        text-align: center;
+        color: purple;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .work:hover {
+        color: black;
+      }
+      .working {
+        /* background-color: lightgreen; */
+        display: flex;
+        justify-content: center;
+      }
+      .working img {
+        margin-right: 20px;
+      }
+
+      .web {
+        display: flex;
+        margin-left: 150px;
+      }
+      .web p {
+        margin-right: 300px;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      #form form {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin: 100px auto;
+        margin-left: 500px;
+        margin-right: 500px;
+        font-size: larger;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        color: darkred;
+        background-color: dodgerblue;
+      }
+      #form form input {
+        margin-bottom: 20px;
+        height: 30px;
+        background-color: lightsalmon;
+        font-size: larger;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      #form form label {
+        margin-bottom: 10px;
+      }
+      #form form input text {
+        height: 20px;
+      }
+      #form form button {
+        width: 100px;
+        font-size: larger;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        color: purple;
+        background-color: lime;
+      }
+      #form form button:hover {
+        color: crimson;
+      }
+      #form form input text ::placeholder {
+        font-size: larger;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        color: purple;
+      }
+      .ending {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+        color: cornsilk;
+        /* margin-bottom: 100px; */
+        background-color: darkslategray;
+        padding: 20px;
+      }
+      .ending h3 {
+      }
+      .ending .foot img {
+        margin-right: 20px;
+      }
+      .ending .square {
+        display: flex;
+        padding-bottom: 100px;
+      }
+      #formbox {
+        background-color: dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <nav id="navbar">
+      <div>
+        <a class="item1" href="#"
+          ><img
+            src="data:image/jpeg;base64,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"
+            width="100px"
+            height="100px"
+            style="border-radius: 50%"
+            alt=""
+        /></a>
+      </div>
+      <div id="anchor">
+        <a class="item2" href="">Home</a>
+        <a class="item3" href="#">Skills</a>
+        <a class="item4" href="#">Work</a>
+        <a class="item5" href="#">Contact</a>
+      </div>
+    </nav>
+    <section class="container1">
+      <!-- <div class="img1"> -->
+      <img
+        class="img1"
+        src="https://th.bing.com/th/id/R.00071c2b658cf35b9e8c59782a4e4911?rik=ew3DSStGmFfh0A&riu=http%3a%2f%2fwww.coachme.info%2fimages%2fc03966d03dbe5f328587ba65b99c4bd0.jpg&ehk=z6rQ3IzvSQ2cRBt9NszNea2PpwFSeblll53cgaonG90%3d&risl=&pid=ImgRaw&r=0"
+        width="500px"
+        alt=""
+      />
+      <div class="intro">
+        <h1>Hi,</h1>
+
+        <h1>I'm<span style="color: purple"> Saurabh</span></h1>
+
+        <h1>Full Stack Developer</h1>
+        <div class="icons">
+          <img
+            src="https://cdn-icons.flaticon.com/png/128/3670/premium/3670125.png?token=exp=1651910045~hmac=65609a14f92924aa72010d677fe0549c"
+            width="50px"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/145/145807.png"
+            width="50px"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1051/1051326.png"
+            width="50px"
+            alt=""
+          />
+        </div>
+        <button><h3>Download Resume</h3></button>
+      </div>
+    </section>
+    <div class="about">
+      <h1>About</h1>
+    </div>
+
+    <main>
+      <div class="box">
+        <img
+          src="https://cdn.pixabay.com/photo/2016/08/29/08/55/work-1627703__480.jpg"
+          width="500px"
+          alt=""
+        />
+        <div class="para">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
+            doloribus ex nulla inventore, repellat debitis animi, maxime at
+            ullam odio dignissimos expedita cumque eligendi aspernatur
+            temporibus, voluptas a repellendus reiciendis. Lorem ipsum dolor sit
+            amet consectetur adipisicing elit. Mollitia doloribus ex nulla
+            inventore, repellat debitis animi, maxime at ullam odio dignissimos
+            expedita cumque eligendi aspernatur temporibus, voluptas a
+            repellendus reiciendis.
+          </p>
+        </div>
+      </div>
+    </main>
+    <div class="skills">
+      <h1>Skills</h1>
+    </div>
+    <div class="tech">
+      <div class="pro">
+        <h2>Proffesional Skills</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi
+          architecto nulla ipsum ipsa temporibus itaque excepturi aut accusamus
+          quia tempora!
+        </p>
+        <div class="softwares">
+          <img
+            class="react"
+            src="https://cdn-icons-png.flaticon.com/128/5968/5968292.png"
+            width="40px"
+            alt=""
+          />
+          <h3>JavaScript</h3>
+        </div>
+        <div class="softwares">
+          <img
+            class="react"
+            src="https://cdn-icons-png.flaticon.com/128/6132/6132222.png"
+            width="40px"
+            alt=""
+          />
+          <h3>C++</h3>
+        </div>
+        <div class="softwares">
+          <img
+            class="react"
+            src="https://cdn-icons-png.flaticon.com/512/919/919825.png"
+            width="40px"
+            alt=""
+          />
+          <h3>Node.js</h3>
+        </div>
+        <div class="softwares">
+          <img
+            class="react"
+            src="https://cdn-icons-png.flaticon.com/512/1125/1125761.png"
+            width="40px"
+            alt=""
+          />
+          <h3>React.js</h3>
+        </div>
+      </div>
+      <div class="rick">
+        <img
+          src="https://wallpapercave.com/dwp1x/wp2065394.png"
+          height="380px"
+          width="600px"
+          alt=""
+        />
+      </div>
+    </div>
+    <div class="work">
+      <h1>My Work</h1>
+    </div>
+    <div class="">
+      <div class="working">
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work1.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work2.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work3.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+      </div>
+      <div class="web">
+        <p>LMS Website Demo</p>
+        <p>LMS Website Demo</p>
+        <p>LMS Website Demo</p>
+      </div>
+    </div>
+    <div class="">
+      <div class="working">
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work4.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work5.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+
+        <img
+          src="https://ghoshsuman845.github.io/Portfolio-Website/images/work6.jpg"
+          width="400px"
+          height="250px"
+          alt=""
+        />
+      </div>
+      <div class="web">
+        <p>LMS Website Demo</p>
+        <p>LMS Website Demo</p>
+        <p>LMS Website Demo</p>
+      </div>
+    </div>
+    <div class="work">
+      <h1>Contact</h1>
+    </div>
+    <div id="formbox">
+      <div id="form">
+        <form>
+          <label>Name</label>
+          <input type="text" placeholder="name" />
+          <label>E-Mail</label>
+          <input type="text" placeholder="eg - saurabh@gmail.com" />
+          <label>Your Message</label>
+          <input type="text" style="height: 80px" />
+          <!-- <label>Submit</label> -->
+          <button>Submit</button>
+        </form>
+      </div>
+    </div>
+    <footer>
+      <div class="ending">
+        <h1>Saurabh Pandey</h1>
+        <div class="foot">
+          <img
+            src="https://cdn-icons.flaticon.com/png/128/3670/premium/3670125.png?token=exp=1651910045~hmac=65609a14f92924aa72010d677fe0549c"
+            width="50px"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/145/145807.png"
+            width="50px"
+            alt=""
+          />
+          <img
+            src="https://cdn-icons-png.flaticon.com/128/1051/1051326.png"
+            width="50px"
+            alt=""
+          />
+        </div>
+        <h3>© 2022 copyright all right reserved</h3>
+        <div class="square">
+          <img
+            style="flex-direction: row"
+            src="https://cdn-icons-png.flaticon.com/128/4975/4975674.png"
+            width="30px"
+            alt=""
+          />
+          <img
+            style="flex-direction: row"
+            src="https://cdn-icons-png.flaticon.com/128/4975/4975674.png"
+            width="30px"
+            alt=""
+          />
+          <img
+            style="flex-direction: row"
+            src="https://cdn-icons-png.flaticon.com/128/4975/4975674.png"
+            width="30px"
+            alt=""
+          />
+          <img
+            style="flex-direction: row"
+            src="https://cdn-icons-png.flaticon.com/128/4975/4975674.png"
+            width="30px"
+            alt=""
+          />
+          <img
+            style="flex-direction: row"
+            src="https://cdn-icons-png.flaticon.com/128/4975/4975674.png"
+            width="30px"
+            alt=""
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
